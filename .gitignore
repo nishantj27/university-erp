@@ -1,0 +1,23 @@
+target/
+*.class
+
+# IDE
+.idea/
+*.iml
+.vscode/
+.settings/
+.classpath
+.project
+
+# local config with real credentials (ship the .example instead)
+src/main/resources/app.properties
+
+# build artifact from the shade plugin
+dependency-reduced-pom.xml
+
+# the original assignment brief (kept local, not part of the portfolio repo)
+AP_M25_Project-v1.pdf
+
+# logs / os junk
+*.log
+.DS_Store
