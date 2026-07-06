@@ -1,0 +1,15 @@
+# Copy this file to app.properties and adjust if your MySQL setup differs.
+# app.properties is gitignored so real credentials never get committed.
+
+# --- Auth database (usernames, roles, password hashes) ---
+auth.jdbc.url=jdbc:mysql://localhost:3306/erp_auth?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+auth.jdbc.user=erp_app
+auth.jdbc.password=erp_app_pw
+
+# --- ERP database (students, courses, sections, grades, ...) ---
+erp.jdbc.url=jdbc:mysql://localhost:3306/erp_main?useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+erp.jdbc.user=erp_app
+erp.jdbc.password=erp_app_pw
+
+# lock the account after this many wrong password attempts (0 = never lock)
+auth.max.failed.attempts=5
